@@ -1,0 +1,27 @@
+{
+  "name": "nellyoann.github.io",
+  "version": "1.0.0",
+  "description": "nellyoann.github.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nellyoann/nellyoann.github.io.git"
+  },
+  "author": "Clément",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nellyoann/nellyoann.github.io/issues"
+  },
+  "homepage": "https://github.com/nellyoann/nellyoann.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-sass": "^3.0.0"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1"
+  }
+}
