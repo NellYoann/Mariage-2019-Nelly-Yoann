@@ -121,6 +121,55 @@ h1 {
     #nellyoann #song .second-batch .group-text .text {
       margin: 20px auto; }
 
+#nellyoann .choice-container {
+  background-image: url("../img/back-cactus.png");
+  background-position: center; }
+
+#nellyoann #choice {
+  position: relative;
+  width: 72vw;
+  height: 60vw;
+  margin: 0 auto;
+  overflow: hidden; }
+  #nellyoann #choice:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(to right, #fffef9 70px, rgba(255, 254, 249, 0) 100px); }
+  #nellyoann #choice:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 254, 249, 0) 0px, #fffef9 30px); }
+  #nellyoann #choice .up-down {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/choice-y.jpeg");
+    background-size: auto 120%;
+    background-position: bottom right;
+    background-repeat: no-repeat; }
+  #nellyoann #choice .up-top {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/choice-n.jpeg");
+    background-size: auto 100%;
+    background-position: bottom right;
+    background-repeat: no-repeat; }
+
 @media screen and (max-width: 780px) {
   #nellyoann h1 {
     font-size: 45px; }

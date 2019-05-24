@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
-	// reset scroll
-	if ('scrollRestoration' in history) {
-		history.scrollRestoration = 'manual';
-	}
-
 	launchIntro();
 
 	function launchIntro() {
+		// reset scroll
+		if ('scrollRestoration' in history) {
+			history.scrollRestoration = 'manual';
+		}
+
 		var intro = new TimelineMax();
 
 		window.scrollTo(0, 0);
@@ -31,5 +31,18 @@ $(document).ready(function() {
 
 		intro.play();
 	}
+
+	$('#choice').on('mousemove', function(e) {
+		var upTopOffset = 70;
+
+		var margin = 100;
+
+		var containerWidth = $(this).outerWidth() - margin,
+			mousePos = e.offsetX - margin / 2,
+			alpha = Math.round(e.offsetX / containerWidth * 100) / 100;
+
+
+		TweenMax.set($(this).find('.up-top'), {alpha: alpha, right: - upTopOffset * (1 - alpha)})
+	})
 
 });
